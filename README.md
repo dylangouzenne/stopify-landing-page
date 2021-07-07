@@ -29,6 +29,7 @@ CTRL+C ou `docker-compose down`
 - aller dans le dossier docker-image/_script et ouvrir le fichier hugo.sh
 - modifier la valeur de la variable HUGO_VERSION (0.85 au lieu de 0.81).
 - stoper et suprimer le container en cours d'execution.
-- relancer la commande "docker-compose up -d"
+- executer la commande "docker-compose build" pour mettre a jour l'image du container
+- relancer la commande "docker-compose up -d" pour créer un nouveau container contenant les mise à jour.
 - ataché un shell au container avec la commande "docker exec -ti stopify-landing-page_dev_server_1 /bin/sh".
 - executer la commande "hugo version" et vérifier que la valeur retourné est bien 0.85.
