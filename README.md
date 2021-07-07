@@ -26,7 +26,7 @@ CTRL+C ou `docker-compose down`
 
 ### Changer la version d'hugo installée dans l'image Docker
 
-- aller dans le dossier docker-image et ouvrir le fichier hugo.sh
+- aller dans le dossier docker-image/_script et ouvrir le fichier hugo.sh
 - modifier la valeur de la variable HUGO_VERSION (0.85 au lieu de 0.81).
 - stoper et suprimer le container en cours d'execution.
 - relancer la commande "docker-compose up -d"
