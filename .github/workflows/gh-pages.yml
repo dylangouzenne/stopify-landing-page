@@ -33,7 +33,7 @@ jobs:
           publish_dir: ./website/public
 
       - name: Deploy_aws_s3
-        run: hugo deploy --target=aws_s3
+        run: hugo deploy --target=aws_s3 --configdir=/themes/bigspring/
         env:
           aws_region: 'eu-west-3'
           aws_s3_access: ${{ secrets.AWS_S3_ACCESS}}
