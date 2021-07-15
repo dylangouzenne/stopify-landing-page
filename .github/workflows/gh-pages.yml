@@ -8,6 +8,7 @@ on:
 
 jobs:
   job_gh-pages:
+    name: job_gh-pages
     deploy:
       runs-on: ubuntu-20.04
       steps:
@@ -33,6 +34,7 @@ jobs:
             publish_dir: ./website/public
 
   job_aws-s3:
+    name: job_aws-s3
     deploy:
       runs-on: ubuntu-20.04
       steps:
