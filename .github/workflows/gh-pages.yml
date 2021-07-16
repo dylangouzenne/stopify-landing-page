@@ -51,7 +51,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        run: hugo deploy --target=aws_s3 --configdir=/themes/bigspring/
+        run: hugo deploy --publish_dir ./website/public --configdir=/themes/bigspring/ --target=aws_s3
         env:
           aws_region: 'eu-west-3'
           aws_s3_access: ${{ secrets.AWS_S3_ACCESS}}
