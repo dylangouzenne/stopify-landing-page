@@ -54,5 +54,5 @@ jobs:
         run: cd website && hugo deploy --target aws_s3
         env:
           aws_region: 'eu-west-3'
-          aws_s3_access: ${{ secrets.AWS_S3_ACCESS}}
-          aws_s3_secret: ${{ secrets.AWS_S3_SECRET }}
+          AWS_ACCESS_KEY_ID: ${{ AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
