@@ -51,7 +51,7 @@ jobs:
         run: cd website && hugo --minify
 
       - name: Deploy
-        run: cd website && hugo deploy --target aws_s3
+        run: cd website && hugo deploy --target aws_s3 -v
         env:
           aws_region: 'eu-west-3'
           aws_s3_access: ${{ secrets.AWS_S3_ACCESS}}
